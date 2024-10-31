@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TRAvellER Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #cec7be;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: rgb(9, 18, 11), 116, 16;
+            overflow: hidden;
+            position: -webkit-sticky; /* For Safari */
+            position: sticky;
+            padding: 20px;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: rgb(16, 13, 10);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .login-container {
+            width: 300px;
+            padding: 16px;
+            background-color: rgb(200, 123, 7);
+            margin: 100px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgb(15, 15, 14);
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+        .login-container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            margin: 5px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .login-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="TRAvellER.html">TRAvellER</a>
+    </nav>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <input type="text" name="username" placeholder="Username" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="submit" value="Login">
+            <br><br>
+            Don't have an account? <a href="register.html">Register here</a>
+        </form>
+    </div>
+</body>
+</html>
